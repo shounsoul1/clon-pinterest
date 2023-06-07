@@ -2,12 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #container{
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(221, 224, 18, 0.5);
-    overflow-y: scroll;
+    
 }
 #navbar-pinterest{
     display: flex;
@@ -17,6 +17,8 @@
     font-size: 20px;
     width: 99.99%;
     height: 10%;
+    padding-left: 16px;
+    padding-right: 16px;
     background-color: rgb(165, 42, 42);
 }
 .display{
@@ -39,10 +41,14 @@
     padding: 1% 3%;
     font-size: 16px;
 }
+.logo{
+
+}
 .ie-c{
     font-size: 16px;
     font-weight: 600;
     list-style: none;
+    min-width: 60px;
 }
 .svg{
     fill: currentColor;
@@ -52,6 +58,7 @@
 }
 .c-s{
     color: #5f5f5f;
+    width: 48px;
 }
 #content{
     padding-top: 80px;
@@ -62,25 +69,29 @@
     position: relative;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
 }
 .container-img{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    background-color: cornflowerblue;
-    
 }
 .card-image{
+    display: flex;
+    flex-flow: column;
     width: 256px;
-    height: 400px;
+    height: 350px;
     background-color: #38c216;
     margin: 10px;
+    border-radius: 16px;
+    
+    
 }
 .img-gg{
     position: absolute;
+    width: 256px;
+    height: 350px;
     object-fit: cover;
-    display: none;
-    
 }
