@@ -7,7 +7,6 @@
 #container{
     width: 100vw;
     min-height: 100vh;
-    
 }
 #navbar-pinterest{
     display: flex;
@@ -19,7 +18,6 @@
     height: 10%;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: rgb(165, 42, 42);
 }
 .display{
     display: flex;
@@ -68,30 +66,36 @@
 .container{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 45%;
     overflow-y: scroll;
 }
 .container-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
+    columns:5 320px;
+    display: block;
+    margin: 1em;
 }
 .card-image{
-    display: flex;
-    flex-flow: column;
-    width: 256px;
-    height: 350px;
+    width: 220px;
     background-color: #38c216;
-    margin: 10px;
     border-radius: 16px;
-    
-    
+    margin: 0.5em;
 }
 .img-gg{
-    position: absolute;
-    width: 256px;
-    height: 350px;
-    object-fit: cover;
+    display: block;
+    max-width: 100%
+}
+.img-gg:hover{
+    cursor: zoom-in;
+    
+}
+.row{
+    display: flex;
+    padding: 0.5em 0.5em;
+}
+.bor{
+    cursor: pointer;
+}
+.img-prof{
+    width: 2em;
+    border-radius: 1px solid black;
 }
