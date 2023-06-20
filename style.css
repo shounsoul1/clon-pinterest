@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 *{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 #container{
     width: 100vw;
@@ -22,9 +23,36 @@
 .fondo{
     padding: 0 0.5em;
 }
+.black{
+    display: flex;
+    background-color: black;
+    height: 48px;
+    align-items: center;
+    border-radius: 24px;
+}
+.c-a{
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    padding: 1em;
+    border-radius: 0em solid black;
+}
 .display{
     display: flex;
     padding: 0 0.5em;
+    align-items: center;
+}
+.borr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5em;
+}
+.borr-img{
+    overflow: hidden;
+    border-radius: 100%;
+    width: 27px;
+    height: 27px;
 }
 
 .a-c{
@@ -34,19 +62,14 @@
 .a-c-l:hover{
     text-decoration: underline;
 }
-.c-a{
-    color: #fff;
-    background-color: black;
-    padding: 1em;
-    border-radius: 1em solid black;
-}
+
 .search{
     display: flex;
     flex: 1 1 auto;
     min-width: 0;
     min-height: 0;
     height: 48px;
-    background-color: rgba(42, 165, 149, 0.541);
+    background-color: #33333317;
     border-radius: 24px;
     align-items: center;
 }
@@ -69,9 +92,7 @@
     padding: 1% 3%;
     font-size: 16px;
 }
-.logo{
-    padding-top: 0.5em;
-}
+
 .ie-c{
     font-size: 16px;
     font-weight: 600;
@@ -91,32 +112,31 @@
 #content{
     padding-top: 80px;
     width: 100%;
-    height: 100vw;
+    height: 100%;
 }
 .container{
     position: relative;
     width: 100%;
-    height: 45%;
+    height: 89vh;
     overflow-y: scroll;
 }
 .container-img{
     columns:5 220px;
     display: block;
     margin: 0 1em;
+    
 }
 .card-image{
     width: 220px;
-    background-color: #38c216;
-    border-radius: 16px;
     margin: 0.5em;
+    border-radius: 16px;
 }
 .img-gg{
     display: block;
     max-width: 100%
-    
 }
 .div-img-prof{
-    padding-right: 0.5em;
+    width:2em;
 }
 .img-gg:hover{
     cursor: zoom-in;
@@ -124,12 +144,14 @@
 .row{
     display: flex;
     padding: 0.5em 0.5em;
-    
 }
 .bor{
     cursor: pointer;
 }
 .img-prof{
-    width: 2em; 
+    width: 27px;
+    height: 27px;
     overflow: hidden;
+    border-radius: 100%;
+    padding-top: 0.2em;
 }
