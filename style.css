@@ -83,7 +83,7 @@
 .grey{
     color: #5f5f5f;
 }
-.input{
+.finder{
     width: 100%;
     border: none;
     background-color: transparent;
@@ -125,10 +125,65 @@
     
 }
 .card-image{
+    position: relative;
     width: 220px;
     margin: 0.5em;
     border-radius: 16px;
 }
+.over{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.card-image:hover .over{
+    opacity: 1;
+}
+.b-h{
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.b-h.b-d{
+    
+}
+.b-h.b-p{
+    left: 90%;
+}
+.b-h.b-s{
+    display: flex;
+    border-radius:24px;
+    color: #fff;
+    padding: 1.1em 1em;
+    font-weight: 600;
+    font-size: 16px;
+    top:15%;
+    left: 75%;
+    
+}
+.b-h:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.b-h.b-s{
+    background-color: #e60023;
+}
+.b-h.b-s:hover{
+    background-color: #ce0505;
+}
+
 .img-gg{
     display: block;
     max-width: 100%
@@ -146,6 +201,11 @@
 .bor{
     cursor: pointer;
 }
+.c-svg{
+    display: none;
+    color: #fff;
+    padding-right: 0.5em;
+}
 
 .img-prof{
     width: 27px;
@@ -153,4 +213,59 @@
     overflow: hidden;
     border-radius: 100%;
     padding-top: 0.2em;
+}
+@media screen and (max-width: 730px){
+    .none1{
+        display: none;
+    }
+}
+@media screen and (max-width:620px){
+    .none2{
+        display: none;
+    }
+    .c-a{
+        color: #000000;
+        text-decoration: none;
+        background-color: transparent;
+        padding: 1em;
+        border-radius: none;
+    }
+    .black{
+        display: flex;
+        background-color: transparent;
+        height: 48px;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .c-svg{
+        display: block;
+        color: #000000;
+    }
+}
+@media screen and (max-width:552px){
+    .search{
+        display: flex;
+        flex: 1 1 auto;
+        max-width:100px;
+        min-height: 0;
+        height: 48px;
+        background-color: #33333317;
+        border-radius: 24px;
+        align-items: center;
+    }
+}
+@media screen and (max-width:447px){
+    .search{
+        display: flex;
+        flex: 1 1 auto;
+        max-width:40px;
+        min-height: 0;
+        height: 48px;
+        background-color: #33333317;
+        border-radius: 27px;
+        align-items: center;
+    }
+    .finder{
+        display:none;
+    }
 }
